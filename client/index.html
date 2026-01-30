@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Guestbook</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="wrapper">
+      <h1>📖 Guestbook & All reviews 📖</h1>
+
+      <button id="darkModeToggle" class="dark-mode-btn">🌙 Dark Mode</button>
+
+      <form id="form">
+        <input name="msg_name" placeholder="your name or Anonymous" required />
+        <textarea
+          name="content"
+          placeholder="Tell Us How Your Stay Was "
+          required
+        ></textarea>
+        <button type="submit">Submit</button>
+      </form>
+
+      <section id="guestbookEntries"></section>
+    </main>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
