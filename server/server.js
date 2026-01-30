@@ -46,5 +46,5 @@ app.post("/guestbook", async (req, res) => {
 });
 
 app.listen(6363, () => {
-  console.log(`Server started on http://localhost:6363`);
+  console.log(`Server started on https://guestbook-and-review-1.onrender.com/`);
 });

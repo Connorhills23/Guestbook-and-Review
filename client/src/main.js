@@ -6,7 +6,7 @@ const darkModeToggle = document.getElementById("darkModeToggle");
 
 // Fetch messages
 async function fetchData() {
-  const response = await fetch("http://localhost:6363/guestbook");
+  const response = await fetch("https://guestbook-and-review-1.onrender.com/");
   return response.json();
 }
 
@@ -58,7 +58,7 @@ async function handleSubmit(event) {
   const formData = new FormData(form);
   const userInput = Object.fromEntries(formData);
 
-  await fetch("http://localhost:6363/guestbook", {
+  await fetch("https://guestbook-and-review-1.onrender.com/", {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify(userInput),
